@@ -201,7 +201,9 @@ html{
 /*About*/
 
 .about{
-    background: radial-gradient(#e1efff, white);
+/*     background: radial-gradient(#e1efff, white); */
+     background:linear-gradient(#989ccd, white, #8dcadf);
+}
 }
 
 .about .title::after{
@@ -523,6 +525,10 @@ html{
     margin: 10px 0;
 }
 
+.contact .contact-content .column-left .icons li a{
+    text-decoration: none;
+    font-size: 22px;
+}
 .contact .contact-content .row{
     display: flex;
     height: 65px;
@@ -562,7 +568,13 @@ html{
     height: 80px;
     width: 100%;
 }
-  
+
+.contact .column-right .text{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Noticia Text", serif;
+}
+
 .contact .column-right form .name {
     margin-right: 10px;
 }
