@@ -550,7 +550,9 @@ html{
 }
 
 .contact .contact-content .info .sub-title {
-    color: #333;
+/*     color: #333; */
+    text-deocration:transparent;
+    background: linear-gradient(to top left,#5433FF,#20BDFF,#A5FECB);
 }
 
 .contact .column-right form .fields {
@@ -562,6 +564,16 @@ html{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
+}
+
+/* styling the input tag for name and email of sender */
+
+.contact .column-right .fields .field-name,
+.contact .column-right .fields .field-email{
+    margin-right: 11px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px ;
 }
   
 .contact .column-right form .textarea {
@@ -599,11 +611,13 @@ html{
 .contact .column-right form .textarea textarea {
   padding-top: 10px;
   resize: none;
+  padding-bottom: 20px;
 }
 
 .contact .column-right form .button-area {
   display: flex;
   align-items: center;
+  margin: 38px 0px;
 }
 
 .contact .column-right form .button-area button {
