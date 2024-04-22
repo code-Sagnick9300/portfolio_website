@@ -528,6 +528,8 @@ html{
 .contact .contact-content .column-left .icons li a{
     text-decoration: none;
     font-size: 22px;
+    color: #534c60;
+    font-family: "Mooli", sans-serif;
 }
 .contact .contact-content .row{
     display: flex;
@@ -558,6 +560,8 @@ html{
 .contact .column-right form .fields {
     display: flex;
 }
+
+
   
 .contact .column-right form .field,
 .contact .column-right form .fields .field {
