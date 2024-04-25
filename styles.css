@@ -518,11 +518,11 @@ html{
     font-weight: 400;
 }
 
-.contact .contact-content .left p {
+.contact .contact-content .column-left p {
     text-align: justify;
 }
 
-.contact .contact-content .left .icons {
+.contact .contact-content .column-left .icons {
     margin: 10px 0;
 }
 
