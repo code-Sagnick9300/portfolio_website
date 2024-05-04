@@ -161,7 +161,7 @@ html{
 
 .home {
     display: flex;
-     background: url(laptop_coffee_041401.jpg) no-repeat 
+     background: url(img/laptop_coffee_041401.jpg) no-repeat 
       center  /*https://source.unsplash.com/720x600/?dark,laptop*/;
     height: 100vh;
     color: #fff;
