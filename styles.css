@@ -121,6 +121,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar .menu{
+    /* right: 100px; */
     background-color: #545373;
     border: 4px solid #dbb672;
     padding: 8px 10px;
@@ -138,6 +139,7 @@ html{
     font-weight: 500;
     margin-left: 25px;
     transition: color 1s ease;
+    text-decoration: none;
 }
 
 .navbar .menu li a:hover {
@@ -159,11 +161,12 @@ html{
 
 .home {
     display: flex;
-     background: url("https://github.com/code-Sagnick9300/portfolio_website/blob/main/img/laptop_coffee_041401.jpg") no-repeat 
+     background: url(laptop_coffee_041401.jpg) no-repeat 
       center  /*https://source.unsplash.com/720x600/?dark,laptop*/;
     height: 100vh;
     color: #fff;
     min-height: 500px;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Ubuntu", sans-serif;
@@ -199,14 +202,67 @@ html{
     font-weight: 400;
 }
 
+.home .home-content button {
+    display: block;                                                    
+    width: 160px !important;
+    height: 42px;
+    font-weight: 500;
+    outline: none;
+    border: 2px solid #1e3551;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background:#534c60;
+    transition: all 0.3s ease;
+
+
+
+
+    /* color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #199fa3; */
+
+}
+
+.home .home-content button:hover{
+    color: #1e3551;
+    background: none;
+    animation: pulsate 1s ease-in-out;
+}
+
+.home .home-content a{
+    color: linear-gradient(rgb(164, 230, 175),rgb(134, 175, 199),rgb(231, 156, 209));
+    border: 2px solid ;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 2px 10px;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-top: 20px;
+    width: 140px;
+    background-color: #dbdadb;
+}
+
+.home .home-content a:hover {
+    color: #1e3551;
+    background: none;
+    animation: pulsate 1s ease-in-out;
+}
 /*About*/
 
 .about{
-/*     background: radial-gradient(#e1efff, white); */
-     background:linear-gradient(#989ccd, white, #8dcadf);
-}
+    /* background: radial-gradient(#e1efff, white); */
+    background:linear-gradient(#989ccd, white, #8dcadf);
 }
 
+.about .title{
+    font-family: "Alice", serif;
+    font-weight: 600;
+}
 .about .title::after{
     content: "--Who I am?--";
     text-align: center;
@@ -244,18 +300,25 @@ html{
 
 .about .about-content .column-right p{
     text-align: center;
+    font-family: "Nova Square", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: darkslategrey;
 }
 
 .about .about-content .column-right a{
     display:inline-block;
+    text-decoration: none;
     background: #1e3551;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    padding: 12px 5px;
     margin-top: 20px;
     margin-top: 28px;
-    border: 2px solid #1e3551;
-
+    border: 2px solid #091344;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 7px;
 }
 
 .about .about-content .column-right a:hover{
@@ -278,11 +341,18 @@ html{
 .projects{
     color:  #a9deb4;
     background: #111;
+    border: 6px #7790be;
+    border-radius: 5px ;
 }
 
+.services .title{
+    font-family: "Alice", serif;
+    font-weight: 400;
+}
 .services .title::before,
 .projects .title::before {
     background: #fff;
+    content: none;
 }
 
 .services .title::after,
@@ -297,12 +367,13 @@ html{
     text-align: center;
     border-radius: 10px;
     padding: 50px 27px;
+    margin: 25px 20px;
     cursor: pointer;
     transition: all 0.9s ease;
 }
 
 .services .serv-content .card:hover{
-    background: linear-gradient(456deg,rgb(226, 88, 63),rgb(224, 90, 206),rgb(108, 88, 145));
+    background: linear-gradient(240deg,rgb(226, 88, 63),rgb(224, 90, 206),rgb(108, 88, 145));
 
 }
 
@@ -342,6 +413,11 @@ html{
     background: radial-gradient(#67a18fcf, white);
 }
 
+.skills .title{
+    font-family: "Alice", serif; /*fontt of Skills section title*/
+    font-weight: 600;
+}
+
 .skills .title::after {
     content: "—What I Know ?—";
 }
@@ -356,7 +432,7 @@ html{
     font-family: "Berkshire Swash", serif;
 }
 
-.skilla .skills-content .column-left p{
+.skills .skills-content .column-left .text p{
     text-align: justify;
     font-family: "Viga", sans-serif;
     font-style: bold;
@@ -370,7 +446,7 @@ html{
 
 
 .skills .skills-content .column-left a{
-    display: ;
+    display: inline-block;
     background: #1e3551;
     color: #fff;
     font-size: 25px;
@@ -462,11 +538,11 @@ html{
     transition: all 0.4 s ease-in-out;
 }
 
-.project .card:hover{
+.project .carousel .card:hover{
     background: linear-gradient(120deg,rgb(108, 114, 187),rgb(223, 77, 223),rgb(87, 202, 202));
 }
 
-.project .card .box{
+.project .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -474,17 +550,17 @@ html{
     transition: all 0.4s ease;
 }
 
-.project .card:hover .box{
+.project .carousel .card:hover .box{
     transform: scale(1.05);
 }
 
-.project .card .text{
+.project .carousel .card .text{
     font-size: 24px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.project .card img{
+.project .carousel .card img{
     height: 150px;
     width: 190px;
     object-fit: cover;
@@ -493,20 +569,45 @@ html{
     transition: all 0.8s ease;
 }
 
-.project .card:hover img{
+.project .carousel .card:hover img{
     border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #888c8d !important;
+    transition: all 0.3s ease;
+}
+  
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+  
+.owl-dot.active,
+.owl-dot:hover {
+    background: #18365a !important;
 }
 
 /*Contact*/
 .contact{
-    background: radial-gradient(#ca276b,rgb(213, 167, 231),#98a839);
+    background: radial-gradient(#77bec6, rgb(213, 167, 231),#2dd64b )/*#98a839*/
 }
 
 .contact .title::after{
     content: "-Get in Touch with me-";
 }
 
-.contact .conatact-content .column{
+.contact .contact-content .column{
     width: calc(50%-65px);
 }
 
@@ -514,7 +615,7 @@ html{
     font-size: 20px;
     /* font-weight: 600; */
     margin-bottom: 10px;
-    font-style: "Mooli", sans-serif;
+    font-family: "Mooli", sans-serif;
     font-weight: 400;
 }
 
@@ -542,28 +643,37 @@ html{
     margin-left: 30px;
 }
 
+.contact .contact-content .row .info .head,.subtitle{
+    color: darkorchid;
+    transition: 0.4s ease;
+}
 .contact .contact-content .row i {
     font-size: 25px;
     color: #1e3551;
 }
 
 .contact .contact-content .info .head{
+    font-size: 18px;
     font-weight: 500;
     color: #000;
 }
 
 .contact .contact-content .info .sub-title {
-/*     color: #333; */
-    text-deocration:transparent;
+    /* color: #333; */
+    font-size: 18px;
+    text-decoration:transparent;
     background: linear-gradient(to top left,#5433FF,#20BDFF,#A5FECB);
 }
 
 .contact .column-right form .fields {
     display: flex;
 }
-
-
   
+.contact .column-right .text{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Noticia Text", serif;
+}
 .contact .column-right form .field,
 .contact .column-right form .fields .field {
     height: 45px;
@@ -571,27 +681,20 @@ html{
     margin-bottom: 15px;
 }
 
-/* styling the input tag for name and email of sender */
-
 .contact .column-right .fields .field-name,
 .contact .column-right .fields .field-email{
     margin-right: 11px;
     margin-bottom: 15px;
     border: 1px solid black;
     border-radius: 4px ;
+
 }
-  
-.contact .column-right form .textarea {
+
+.contact .column-right form .field textarea{
     height: 80px;
     width: 100%;
 }
-
-.contact .column-right .text{
-    font-size: 24px;
-    font-weight: 400;
-    font-family: "Noticia Text", serif;
-}
-
+  
 .contact .column-right form .name {
     margin-right: 10px;
 }
@@ -636,7 +739,7 @@ html{
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: #211338;
+    background:#534c60;
     border: 2px solid #1e3551;
     transition: all 0.3s ease;
 }
@@ -650,7 +753,7 @@ html{
 /*Footer*/
 
 footer{
-    background: #45b3b3;
+    background: #222523;
     padding: 6px 15px;
     color: #888c8d;
     text-align: center;
@@ -683,6 +786,7 @@ footer span a:hover {
       font-size: 16px;
     }
 }
+
 @media (max-width: 991px) {
     .social-menu ul li a {
       left: 114px;
@@ -771,3 +875,4 @@ footer span a:hover {
       width: 100%;
     }
 }
+
