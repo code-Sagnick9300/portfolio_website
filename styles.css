@@ -202,6 +202,13 @@ html{
     font-weight: 400;
 }
 
+.home .home-content .text-3 span {
+    color: #1e3551;
+    background: linear-gradient(135deg, #18274d, #fff, rgb(211, 102, 175));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
 .home .home-content button {
     display: block;                                                    
     width: 160px !important;
@@ -271,6 +278,12 @@ html{
     -webkit-box-orient: vertical;
 }
 
+.about .content p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 32px;
+}
+
 .about .about-content .column-left{
     width: 45%;
 }
@@ -280,8 +293,8 @@ html{
 }
 
 .about .about-content .column-left img{
-    height: 400px;
-    width: 400px;
+    height: 545px;
+    width: 306px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -432,7 +445,7 @@ html{
     font-family: "Berkshire Swash", serif;
 }
 
-.skills .skills-content .column-left .text p{
+.skills .skills-content .column-left p{
     text-align: justify;
     font-family: "Viga", sans-serif;
     font-style: bold;
@@ -485,12 +498,18 @@ html{
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
+    font-size: 22px;
+    font-family: "Berkshire Swash", serif;
 }
 
 .skills .skills-content .column-right .span{
     font-weight: 500;
     font-size: 18px;
     font-family: "Short Stack", cursive;
+}
+
+.skills .skills-content .column-right .span i{
+    font-size: 30px;
 }
 
 .skills .skills-content .column-right .line::before{
@@ -621,6 +640,8 @@ html{
 
 .contact .contact-content .column-left p {
     text-align: justify;
+    font-family: "Oxanium", sans-serif;
+    font-size: 20px;
 }
 
 .contact .contact-content .column-left .icons {
@@ -775,7 +796,10 @@ footer{
     color: #888c8d;
     text-align: center;
 }
-
+footer span{
+    color: #fff;
+    font-family: Roboto,"sans-serif";
+}
 footer span a {
     color: #1e3551;
     text-decoration: none;
@@ -795,7 +819,7 @@ footer span a:hover {
 
 @media (max-width: 1104px) {
     .about .about-content .column-left img {
-      height: 350px;
+      height: 400px;
       width: 350px;
     }
     section .title::after {
@@ -861,6 +885,10 @@ footer span a:hover {
         justify-content: center;
         margin: 0 auto 60px;
       }
+      .about .about-content .content-left img{
+        height: 490px;
+        width: 380px;
+      }
       .about .about-content .column-right {
         flex: 100%;
       }
@@ -875,6 +903,12 @@ footer span a:hover {
       } 
 }
 
+@media (min-width:730px) and (max-width: 785px){
+    .about .about-content .column-left img{
+        height: 500px;
+        width: 380px;
+    }
+}
 @media (max-width: 690px) {
     .max-width {
       padding: 0 23px;
@@ -888,6 +922,12 @@ footer span a:hover {
     .home .home-content a {
       font-size: 20px;
     }
+
+    .about .about-content .column-left img{
+        height: 480px;
+        width: 380px;
+    }
+
     .services .serv-content .card {
       width: 100%;
     }
